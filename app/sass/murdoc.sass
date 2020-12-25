@@ -1,0 +1,113 @@
+@import "nav_menu"
+@import "libs"
+@import "global"
+
+.header
+  padding-top: 80px
+  position: relative
+  z-index: 101
+
+.navigation
+  max-width: 1400px
+  padding: 0 20px
+  margin: 0 auto
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+.gorillaz_logo
+  font-size: 24px
+  font-family: "Roboto", sans-serif
+  font-weight: 700
+  text-transform: uppercase
+  color: #fff
+
+.nav_logo
+  text-decoration: none
+  color: #fff
+
+.nav_operkod
+  margin: 0 200px 0 auto
+  font-size: 24px
+  font-family: "Roboto", sans-serif
+  font-weight: 700
+  text-transform: uppercase
+  color: #fff
+
+.menu
+  color: #fff
+  position: relative
+  font-size: 24px
+  cursor: pointer
+  font-size: 24px
+  font-family: "Roboto", sans-serif
+  font-weight: 700
+  text-transform: uppercase
+  &::after
+    content: " "
+    position: absolute
+    bottom: -3px
+    left: 0
+    width: 0
+    height: 3px
+    background-color: #ffffff
+    transition: width 0.3s ease-out
+
+  &:hover::after
+    width: 100%
+    transition: width 0.3s ease-out
+
+.header__bgc
+  position: absolute
+  top: 0
+  width: 100%
+  height: 700px
+  background-color: #a71320
+//===================
+.cover
+  position: relative
+  max-width: 1600px
+  margin: 0 auto
+.cover__wrapper
+  display: flex
+.cover__img
+  margin-top: 100px
+  position: relative
+  z-index: 1
+  width: 45%
+  height: 100%
+  img
+    width: 100%
+    height: 100%
+.cover__name
+  position: relative
+  z-index: 1
+  width: 65%
+.name
+  text-transform: uppercase
+  transform: rotate(-90deg)
+  position: absolute
+  font-size: 184px
+  color: #fff
+  z-index: 1
+  span
+    color: #a71320
+
+.mame-1
+  top: 479px
+  left: 200px
+.mame-2
+  top: 247px
+  left: 25%
+.mame-3
+  top: 494px
+  left: 34%
+.mame-4
+  top: 409px
+  left: 46%
+.mame-5
+  top: 494px
+  left: 55%
+.mame-6
+  top: 250px
+  left: 68%

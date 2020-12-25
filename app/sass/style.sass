@@ -1,0 +1,583 @@
+@import "vars"
+@import "libs"
+@import "fonts"
+@import "global"
+@import "nav_menu"
+
+// font-family: 'Roboto', sans-serif;
+
+.header
+  padding-top: 80px
+  position: relative
+  z-index: 101
+  background-color: #fbf7ec
+
+.navigation
+  max-width: 1200px
+  padding: 0 20px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+
+.gorillaz_logo
+  font-size: 24px
+  font-weight: 700
+  text-transform: uppercase
+  color: #252529
+
+.nav_logo
+  text-decoration: none
+  color: #333333
+
+.nav_operkod
+  margin: 0 200px 0 auto
+  font-size: 24px
+  font-weight: 700
+  text-transform: uppercase
+  color: #252529
+
+.menu
+  position: relative
+  font-size: 24px
+  cursor: pointer
+  font-size: 24px
+  font-weight: 700
+  text-transform: uppercase
+  &::after
+    content: ""
+    position: absolute
+    bottom: -3px
+    left: 0
+    width: 0
+    height: 3px
+    background-color: #000000
+    transition: width 0.3s ease-out
+
+  &:hover::after
+    width: 100%
+    max-width: 70px
+    transition: width 0.3s ease-out
+
+.cover
+  display: flex
+  width: 100%
+  height: auto
+  margin-top: 100px
+  padding-left: 5.9%
+
+  &
+    width: 100%
+    height: auto
+    margin-top: 100px
+    padding-left: 5.9%
+
+  &_page
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+
+.img_gorillaz
+  position: relative
+  z-index: 1
+  transform: scale3d(1, 1, 1)
+  img
+    display: block
+    width: 86.7%
+
+.cover_img
+  position: relative
+  z-index: 0
+  width: 73.7%
+  margin-top: -2.9%
+  float: right
+
+.img_bg
+  width: 100%
+  height: 875px
+  background-image: url("../img/Picture.png")
+  background-position: 0% 0%
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  justify-content: flex-end
+  background-position: 0% 0%
+
+.online_div
+  position: relative
+  z-index: 3
+
+.online_img-1
+  position: absolute
+  display: block
+  width: 60%
+  margin-top: 230px
+  margin-left: 11.9%
+
+.online_img-2
+  position: static
+  width: 10%
+  margin-top: 35%
+  margin-left: 12.5%
+
+// =============
+.main_p_2
+  display: block
+  width: 100%
+  height: auto
+  margin-top: 0px
+
+.container_2
+  overflow: hidden
+  max-width: 100%
+
+.about
+  display: flex
+
+  &-col-1
+    flex-basis: 44.1%
+    background-color: #5ca89e
+    margin-bottom: 50px
+
+  &_arrow
+    height: 500px
+
+.dow-arrow
+  display: flex
+  margin-top: 3vh
+  margin-left: -4vh
+  width: 338px
+  height: 338px
+  border: 10px solid #fff
+  border-radius: 50%
+
+.arrow-anim
+  margin: auto
+  animation-name: arrow
+  animation-duration: 1s
+  animation-iteration-count: infinite
+  opacity: 0.8
+
+@keyframes arrow
+  0%
+    transform: translateY(-60px)
+
+  80%
+    opacity: 0.8
+
+  100%
+    opacity: 0
+    transform: translateY(60px)
+
+.about_img
+  img
+    width: 100%
+    padding-right: 30px
+
+.about-col-2
+  width: 100%
+  padding-top: 420px
+
+.about_content
+  position: relative
+
+.about_img-1
+  position: relative
+  z-index: 0
+  width: 100%
+  height: auto
+  img
+    width: 100%
+
+.about_img-2
+  position: absolute
+  top: 50px
+  left: 0
+  z-index: 1
+  img
+    width: 100%
+    margin-top: 5vh
+    margin-left: -11vw
+
+.about_img-3
+  position: relative
+  z-index: 2
+  width: 26vw
+  margin-top: -16vh
+  margin-left: -2vw
+  img
+    width: 100%
+
+// ================story
+
+.story
+  margin: 200px auto 100px
+
+  &_container
+    margin-top: 0px
+
+  &-1
+    margin-bottom: 100px
+    display: flex
+    justify-content: space-between
+
+  &-col
+    width: 47%
+    width: 445px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &_link
+    display: flex
+    flex-direction: column
+
+    div
+      display: flex
+      margin-bottom: 20px
+      a
+        width: auto
+        margin-bottom: 0px
+        color: #252529
+        font-size: 52px
+        line-height: 47px
+        font-weight: 700
+        text-decoration: none
+        text-transform: uppercase
+
+.link_murdoc
+  a
+    &:hover
+      color: #a71320
+
+.link_2-d
+  justify-content: flex-end
+  a
+    &:hover
+      color: #0c79c4
+
+.link_rassel
+  a
+    &:hover
+      color: #14a266
+
+.link_noodle
+  justify-content: flex-end
+  a
+    &:hover
+      color: #ea5974
+
+.story_img
+  img
+    width: 100%
+
+.story-1_img
+  display: flex
+  justify-content: space-between
+  img
+    width: 157px
+    height: 200px
+
+.story-title
+  margin: 0
+  margin-bottom: 50px
+  color: #252529
+  font-size: 71px
+  line-height: 85%
+  font-weight: 700
+  text-transform: uppercase
+
+.story-text
+  margin-bottom: 0px
+  color: #252529
+  font-size: 21px
+  line-height: 130%
+
+.col-2
+  display: inline-block
+
+.person
+  overflow: hidden
+  width: 100%
+  margin-top: 50px
+  margin-bottom: 150px
+
+  &_container
+    margin: 0 auto
+
+  &_content
+    display: flex
+    justify-content: space-between
+
+  &-col
+    display: flex
+    margin: auto
+
+  &_item
+    cursor: pointer
+    display: flex
+    width: 295px
+    flex-direction: column
+    position: relative
+    margin-right: 42px
+  &:last-child
+    margin-right: 0
+
+  p
+    position: static
+    margin-top: 30px
+    margin-bottom: 0px
+    color: #252529
+    font-size: 34px
+    line-height: 85%
+    font-weight: 700
+    text-decoration: none
+    text-transform: uppercase
+
+  &_item-active p
+    color: #a71320
+
+  &_img
+    z-index: 1
+    border: 3px solid #252529
+    width: 295px
+    height: 375px
+
+  &_img-1
+    margin-right: 42px
+    background-image: url("../img/persona-1.png")
+    background-position: 0px 0px
+    background-size: cover
+    transition: all 1s ease
+
+  &_item-active .person_img-1
+    transition: all 1s ease
+    background-image: url("../img/persona-1_hover.png")
+    background-position: 0px 0px
+    background-size: cover
+
+  &_img-2
+    transition: all 1s ease
+    background-image: url("../img/persona-2.png")
+    background-position: 0px 0px
+    background-size: cover
+
+  &_item-active .person_img-2
+    transition: all 1s ease
+    background-image: url("../img/persona-2_hover.png")
+    background-position: 0px 0px
+    background-size: cover
+
+  &_img-3
+    transition: all 1s ease
+    background-image: url("../img/persona-3.png")
+    background-position: 0px 0px
+    background-size: cover
+
+  &_item-active .person_img-3
+    transition: all 1s ease
+    background-image: url("../img/persona-3_hover.png")
+    background-position: 0px 0px
+    background-size: cover
+
+  &_img-4
+    transition: all 1s ease
+    background-image: url("../img/persona-4.png")
+    background-position: 0px 0px
+    background-size: cover
+
+  &_item-active .person_img-4
+    transition: all 1s ease
+    background-image: url("../img/persona-4_hover.png")
+    background-position: 0px 0px
+    background-size: cover
+
+.string
+  margin-top: 200px
+  width: 100%
+  overflow: hidden
+
+  &_img
+    padding: 25px 0
+    border-top: 5px solid
+  img
+    display: inline-block
+    height: 67px
+
+.epizode
+  width: 100%
+  height: auto
+  img
+    width: 100%
+
+// =======btn==========
+
+.epizode__button
+  display: flex
+  margin: -50px auto 0
+  width: 210px
+  height: 210px
+
+.btn__next
+  background-color: transparent
+  border-style: solid
+  border-width: 3px
+  border-color: #252529
+  border-radius: 50%
+  cursor: pointer
+  width: 100%
+  transition: 0.2s ease-out
+  position: relative
+  overflow: hidden
+  div
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    opacity: 0.7
+    transition: 0.2s ease-out
+    &:hover
+      background-color: #a71320
+      span:first-child
+        opacity: 0
+        transform: translateY(-150px)
+
+      span:last-child
+        transform: translateY(0px)
+    span
+      background-color: transparent
+      position: absolute
+      top: 80px
+      left: 55px
+      font-size: 40px
+      font-weight: 700
+      text-transform: uppercase
+      transition: 0.1s ease-out
+    span:first-child
+      color: #a71320
+    span:last-child
+      color: #fff
+      transform: translateY(150px)
+
+.text
+  width: 100%
+  margin-top: 150px
+  margin-bottom: 250px
+
+  &_container
+    max-width: 1400px
+    margin: 0 auto
+    display: flex
+    justify-content: flex-end
+
+  &_content
+    width: 700px
+  p
+    font-size: 36px
+    margin-bottom: 0px
+    color: #252529
+    line-height: 130%
+
+.product
+  margin-bottom: 100px
+
+  &_container
+    max-width: 1400px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+
+  &_title
+    margin-top: 0px
+    margin-bottom: 0px
+    margin-left: -5px
+    color: #252529
+    font-size: 200px
+    line-height: 85%
+    font-weight: 700
+    text-align: left
+    text-transform: uppercase
+  span
+    text-align: right
+    margin-right: 10vh
+    display: block
+    margin-top: 0px
+    margin-bottom: 0px
+    color: #a71320
+    font-size: 200px
+    line-height: 85%
+    font-weight: 700
+    text-transform: uppercase
+
+.store_preview
+  margin-top: 150px
+  display: flex
+  justify-content: flex-end
+
+.preview_img
+  img
+    width: 500px
+
+.store_btn
+  width: 146px
+  height: 146px
+  display: flex
+  margin: 150px 150px 0px auto
+  button
+    div
+      span
+        top: 57px;
+        left: 26px;
+        font-size: 28px
+
+
+.store_arrow
+  display: flex
+  justify-content: center
+  margin: 250px auto 0 700px
+  transition: transform 1s linear
+  a
+    img
+      width: 300px
+    &:hover
+      transform: translateX(20px)
+
+.footer
+  margin: 100px auto
+  display: flex
+  &__wrapper
+    margin: auto
+
+.radio
+  display: flex
+  align-items: center
+  &__real
+    width: 1px
+    height: 1px
+    opacity: 0
+    position: absolute
+    appearance: none
+  &__real:checked +.radio__fake
+    &::before
+      content: ""
+      position: absolute
+      width: 22px
+      height: 22px
+      border-radius: 50%
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      background-color: #000
+  &__real:checked ~ .radio__title
+    font-weight: 700
+  &__fake
+    position: relative
+    display: inline-block
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: rgb(202, 122, 122)
+  &__title
+    font-size: 50px
+
+@import "media"

@@ -1,0 +1,178 @@
+@import "nav_menu"
+@import "libs"
+@import "global"
+
+body
+  background-color: #a71320
+
+.header
+  padding-top: 80px
+  position: relative
+  z-index: 101
+
+.navigation
+  max-width: 1400px
+  padding: 0 20px
+  margin: 0 auto
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+.gorillaz_logo
+  font-size: 24px
+  font-weight: 700
+  text-transform: uppercase
+  color: #fff
+
+.nav_logo
+  text-decoration: none
+  color: #fff
+
+.nav_operkod
+  margin: 0 200px 0 auto
+  font-size: 24px
+  font-weight: 700
+  text-transform: uppercase
+  color: #fff
+
+.menu
+  color: #fff
+  position: relative
+  font-size: 24px
+  cursor: pointer
+  font-size: 24px
+  font-weight: 700
+  text-transform: uppercase
+  &::after
+    content: " "
+    position: absolute
+    bottom: -3px
+    left: 0
+    width: 0
+    height: 3px
+    background-color: #ffffff
+    transition: width 0.3s ease-out
+
+  &:hover::after
+    width: 100%
+    transition: width 0.3s ease-out
+
+// ================== misic====
+
+.music_container
+  max-width: 1400px
+  margin: 0 auto
+  padding: 0 20px
+
+.music
+  width: 100%
+  display: flex
+  margin-top: 100px
+
+  &_colum
+    flex-basis: 50%
+
+  &_content
+    width: 510px
+    height: 510px
+    margin-top: 50px
+    margin-left: auto
+    position: relative
+
+  &_img
+    width: 100%
+    max-width: 450px
+    opacity: 0
+    transition: 0.5s ease-out
+    position: absolute
+    display: block
+    transform: rotate(8.39deg)
+
+  &_link
+    display: inline-block
+    margin-bottom: 50px
+
+  &_gorillaz
+    &:hover
+      background-image: url(../img/music_link-gorillaz-2.svg)
+      background-position: 50% 50%
+      background-size: 507px
+      background-repeat: no-repeat
+
+  &_demon:hover
+    background-image: url(../img/music_link-demon-2.svg)
+    background-position: 50% 50%
+    background-size: 647px
+    background-repeat: no-repeat
+
+  &_plastic:hover
+    background-image: url(../img/music_link-plastic-2.svg)
+    background-position: 50% 50%
+    background-size: 790px
+    background-repeat: no-repeat
+
+  &_faill:hover
+    background-image: url(../img/music_link-faill-2.svg)
+    background-position: 50% 50%
+    background-size: 447px
+    background-repeat: no-repeat
+
+  &_humanz:hover
+    background-image: url(../img/music_img-humanz-2.svg)
+    background-position: 50% 50%
+    background-size: 442px
+    background-repeat: no-repeat
+
+  &_now:hover
+    background-image: url(../img/music_img-now-2.svg)
+    background-position: 50% 50%
+    background-size: 747px
+    background-repeat: no-repeat
+
+body.menu__active .menu
+  color: #000
+
+body.menu__active .gorillaz_logo
+  color: #000
+
+@media (max-width: 1240px)
+  .music_gorillaz
+    width: 354px
+    &:hover
+      background-size: 354px
+
+  .music_demon
+    width: 452px
+    &:hover
+      background-size: 452px
+
+  .music_plastic
+    width: 553px
+    &:hover
+      background-size: 553px
+
+  .music_faill
+    width: 309px
+    &:hover
+      background-size: 309px
+
+  .music_humanz
+    width: 309px
+    &:hover
+      background-size: 309px
+
+  .music_now
+    width: 523px
+    &:hover
+      background-size: 523px
+
+  .music_content
+    width: 100%
+
+  .music_img
+    padding-right: 20px
+
+@media (max-width: 991px)
+  .music_colum
+    &:first-child
+      display: none
